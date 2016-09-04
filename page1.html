@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hack4Change Visualizations</title>
+	<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/nicgirault/circosJS/master/dist/colorBrewer.css">
+</head>
+<body>
+<script src="https://d3js.org/d3.v3.min.js"></script>
+
+<script src="https://cdn.rawgit.com/nicgirault/circosJS/master/dist/circosJS.js" type="text/javascript"></script>
+<script src="data.js" type="text/javascript"></script>
+
+<svg id='chart' style='display: block; margin: auto;'></svg>
+
+<script type='text/javascript'>
+  var circos = new circosJS({
+      container: '#chart',
+      width: 820,
+      height: 820,
+  });
+
+  circos
+    .layout(
+        {
+            innerRadius: 280,
+            outerRadius: 320,
+            ticks: {display: false},
+            labels: {
+              position: 'left',
+              display: true,
+              size: 11,
+              color: '#000',
+              radialOffset: 15,
+            }
+        },
+        layout_data
+    )
+    .heatmap('totalcondoms', {
+        innerRadius: 200,
+        outerRadius: 250,
+        logScale: false,
+        colorPalette: 'RdPu',
+    }, heatmap)
+    .heatmap('urbanCondoms', {
+    	innerRadius: 140,
+    	outerRadius: 170,
+    	logScale: false,
+    	colorPalette: 'PuBu'
+    },heatmap)
+    .heatmap('ruralCondoms', {
+    	innerRadius: 90,
+    	outerRadius: 120,
+    	logScale: false,
+    	colorPalette: 'PuRd'
+    },heatmap)
+    .render();
+</script>
+</body>
+</html>
