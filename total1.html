@@ -1,5 +1,7 @@
 <html>
   <head>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
       google.charts.load('current', {'packages':['bar']});
@@ -39,13 +41,11 @@
         ]);
 
         var options = {
-          hAxis: {title: "States", direction: -1, slantedText: true, slantedTextAngle: 90},
-
           chart: {
-            title: '',
-          }
-          bars: Horizontal
-    };
+            title: 'People using contraceptives in India(%)',
+          },
+          bars: 'horizontal' // Required for Material Bar Charts.
+        };
 
         var chart = new google.charts.Bar(document.getElementById('barchart_material'));
 
@@ -54,49 +54,14 @@
     </script>
   </head>
   <body>
-    <h1>People Using Condoms is India (%)</h1>
-    <div id="barchart_material" style="width: 1200px; height: 500px;"></div>
+    <div class="row">
+    <div class="col-md-9">
+    <div id="barchart_material" style="width: 900px; height: 700px;"></div>
+    </div>
+    <div class="col-md-3">
+    <img src = "legend.png" style="margin-left: -8em;">
+        <h6>Coutersy <a href="http://howindialives.com/">HowIndiaLives</a></h6>
+    </div>
+    </div>
   </body>
 </html>
-
-
-
-<!--
-India/States/UTs
-India
-Andhra Pradesh
-Assam
-Bihar
-Chattisgarh
-Gujarat
-Haryana
-Jharkhand
-Karnataka
-Kerala
-Madhya Pradesh
-Maharashtra
-Odisha
-Punjab
-Rajasthan
-Tamil Nadu
-Uttar Pradesh
-West Bengal
-Arunachal Pradesh
-Delhi
-Goa
-Himachal Pradesh
-Jammu and Kashmir
-Manipur
-Meghalaya
-Nagaland
-Mizoram
-Sikkim
-Tripura
-Uttarakhand
-Andaman and Nicobar Islands
-Chandigarh
-Dadra and Nagar Haveli
-Daman and Diu
-Lakshadweep
-Puducherry
--->
