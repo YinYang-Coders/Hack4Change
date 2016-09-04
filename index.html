@@ -35,12 +35,24 @@
         },
         layout_data
     )
-    .heatmap('temperatures', {
-        innerRadius: 115,
-        outerRadius: 155,
+    .heatmap('totalcondoms', {
+        innerRadius: 200,
+        outerRadius: 250,
         logScale: false,
-        colorPalette: 'YlOrRd',
+        colorPalette: 'RdPu',
     }, heatmap)
+    .heatmap('urbanCondoms', {
+    	innerRadius: 140,
+    	outerRadius: 170,
+    	logScale: false,
+    	colorPalette: 'PuBu'
+    },heatmap)
+    .heatmap('ruralCondoms', {
+    	innerRadius: 90,
+    	outerRadius: 120,
+    	logScale: false,
+    	colorPalette: 'PuRd'
+    },heatmap)
     .render();
 </script>
 </body>
