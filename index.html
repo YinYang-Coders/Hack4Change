@@ -3,16 +3,17 @@
 <head>
 	<title>Hack4Change Visualizations</title>
 	<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/nicgirault/circosJS/master/dist/colorBrewer.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
-<body>
+<body style="overflow-x: hide !important ">
 <h1 style="text-align: center"> Representation of Married Women using Condoms as a Contraceptive </h1>
 <script src="https://d3js.org/d3.v3.min.js"></script>
 
 <script src="https://cdn.rawgit.com/nicgirault/circosJS/master/dist/circosJS.js" type="text/javascript"></script>
+<div class="row">
+<div class="col-md-9" style="margin-top: -5em">
 <script src="data.js" type="text/javascript"></script>
-
 <svg id='chart' style='display: block; margin: 0em 1em 0em 1em;'></svg>
-
 <script type='text/javascript'>
   var circos = new circosJS({
       container: '#chart',
@@ -56,5 +57,13 @@
     },heatmap)
     .render();
 </script>
+</div>
+<div class="col-sm-3"><img src="Key.png" style="width: 120%;margin-top:15em;margin-left: -8em"></div>
+</div>
+<div class="row" style="text-align: center">
+	<h2><a href="index.html">HeatMap</a></h2>
+	<h2><a href="total.html">Bar Graph</a></h2>
+	<h2><a href="literacy.html">Literacy Map</a></h2>
+</div>
 </body>
 </html>
