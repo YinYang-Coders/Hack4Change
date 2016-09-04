@@ -1,0 +1,99 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['bar']});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['States', 'Total users'],
+          ['Andhra Pradesh', 66.7],
+          ['Assam', 31],
+          ['Bihar', 29.4],
+          ['Chattisgarh', 48.7],
+          ['Gujrat', 56.4],
+          ['Haryana', 55.7],
+          ['Jharkhand', 31.8],
+          ['Karnataka', 62.3],
+          ['Kerala Pradesh', 54.8],
+          ['Madhya Pradesh', 66.7],
+          ['Maharashtra', 63.9],
+          ['Odisha', 39.6],
+          ['Punjab', 63.2],
+          ['Rajasthan', 55.3],
+          ['Tamil Nadu', 59.2],
+          ['Uttar Pradesh', 27.2],
+          ['West Bengal', 53.4],
+          ['Arunachal Pradesh', 48.2],
+          ['Delhi', 55.2],
+          ['Goa', 37],
+          ['Himachal Pradesh', 69.5],
+          ['Jammu and Kashmir', 42.7],
+          ['Manipur', 17],
+          ['Meghalaya', 56.7],
+          ['Mizoram', 56.7],
+          ['Sikkim', 59.8],
+          ['Tripura', 40.6],
+          ['Uttarakhand', 58.9],
+          ['Chandigarh', 70.7]
+        ]);
+
+        var options = {
+          hAxis: {title: "States", direction: -1, slantedText: true, slantedTextAngle: 90},
+          chart: {
+            title: 'People using contraceptives in India(%)',
+          }
+        };
+
+        var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
+
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="columnchart_material" style="width: 1200px; height: 500px;"></div>
+  </body>
+</html>
+
+
+
+<!--
+India/States/UTs
+India
+Andhra Pradesh
+Assam
+Bihar
+Chattisgarh
+Gujarat
+Haryana
+Jharkhand
+Karnataka
+Kerala
+Madhya Pradesh
+Maharashtra
+Odisha
+Punjab
+Rajasthan
+Tamil Nadu
+Uttar Pradesh
+West Bengal
+Arunachal Pradesh
+Delhi
+Goa
+Himachal Pradesh
+Jammu and Kashmir
+Manipur
+Meghalaya
+Nagaland
+Mizoram
+Sikkim
+Tripura
+Uttarakhand
+Andaman and Nicobar Islands
+Chandigarh
+Dadra and Nagar Haveli
+Daman and Diu
+Lakshadweep
+Puducherry
+-->

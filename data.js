@@ -1,6 +1,6 @@
 var layout_data = [
-    { "len": 2, "color": "#ffffb3", "label": "AP1", "id": "andhra" },
-    { "len": 2, "color": "#bebada", "label": "AP2", "id": "arunachal" },
+    { "len": 2, "color": "#ffffb3", "label": "ANP", "id": "andhra" },
+    { "len": 2, "color": "#bebada", "label": "ARP", "id": "arunachal" },
     { "len": 2, "color": "#fb8072", "label": "Assam", "id": "assam" },
     { "len": 2, "color": "#80b1d3", "label": "Bihar", "id": "bihar" },
     { "len": 3, "color": "#fdb462", "label": "Chandigarh", "id": "chandigarh" },
